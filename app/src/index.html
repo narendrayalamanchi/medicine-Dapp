@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Pick your Favorite</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <style>
+    body {
+      background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm373batch15-217-01.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=605421b998a41a0ec058e09e722d8e27');
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-size: 100%;
+    }
+    input {
+      
+      box-sizing: border-box;
+      border: 2px solid blue;
+      background-color: #b3c6ff;
+      
+    }
+    button:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    button{
+      background-color: #2e5cb8; 
+      border: none;
+      color: white;
+      
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      
+      cursor: pointer;
+      
+    }
+    button {border-radius: 4px;}
+  </style>
+  <body>
+
+      <div className="container">
+          <h2 style="text-align:center; font-size: 40px; font-family: Stencil Std, fantasy;">Covid 19 Medicine Supply Chain Management</h2>
+          
+          <div>
+            <div>
+                <h2 style="font-family: Gill Sans, sans-serif;">Approve Smart Contract</h2>
+                <label for="pid">Amount</label> 
+                <input type="number" name="amount" id="approve_amount" /><br/><br/>
+                <button type="button" id="approve_smartcontract">Approve Smart Contract</button>
+            </div>
+            <div style="float:right;font-size: 21px;">
+              <label for="pid">Get Token Balance</label>  
+              <button type="button" id="get_token_balance" >Click Here</button>
+              <p style="font-size: 24px;font-weight: bold;color: blue;" id="balanceofaccount"> </p>
+            </div>
+
+          </div>
+
+
+          <h2 style="font-family: Gill Sans, sans-serif;">Transfer Token Amount</h2>
+          <label for="pid">To Account Address:</label> 
+          <input type="text" name="account_address" id="to_account_add" /><br/><br/>
+          <label for="pid">Amount:</label> 
+          <input type="number" name="tranfer_amount" id="tranfer_amount" /><br/><br/>
+          <button type="button" id="transfer_token_amount">Transfer Token Amount</button>
+
+
+          <h2 style="font-family: Gill Sans, sans-serif;">Add Medicine</h2>
+        <form>
+          <label for="pid">Enter Product Id</label> 
+          <input type="number" name="Id" id="create_productid" /><br/><br/>
+          <label for="custname">Customer Name:</label>
+          <input type="text" name="CustName" id="customer_name" /><br/><br/>
+        </form>
+        
+          <button type="button" id="create_item">Create new Item</button>
+    
+          <h2 style="font-family: Gill Sans, sans-serif; ">Update Medicine Status</h2>
+          Enter Product Id: <input type="number" name="Id" id="update_productid"/><br/><br/>
+          <button type="button" id="paid_status_click">Paid</button>  
+          <button type="button" id="delivery_status_click">Delivered</button>
+    
+          <h2 style="font-family: Gill Sans, sans-serif; ">Track Medicine</h2>
+          Enter Product Id: <input type="number" name="Id" id="track_productid"/><br/><br/>
+         <button type="button" id="track_status_click">Track</button>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/dist/bootstrap.min.js"></script>
+    <script src="js/dist/web3.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script> -->
+    <script src="js/dist/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
