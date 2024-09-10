@@ -35,6 +35,10 @@ The COVID-19 pandemic is spreading rapidly across the globe, which makes it a lo
 **User Interface:**
 ![image](https://github.com/user-attachments/assets/14330b52-6db0-4b12-9671-3808e11e2a7d)
 
+
+**Project Explanation Video Link:**
+https://drive.google.com/file/d/1ZNuoTXqB_FDNa4c-gTvOt6xvHVkeSaO2/view?usp=sharing
+
 **Implementation steps of Smart Contracts:**
 
 **Token creation:**
